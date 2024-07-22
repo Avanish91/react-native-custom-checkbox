@@ -2,34 +2,26 @@ import React, { useState } from 'react';
 import { TouchableHighlight, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-var BACKGROUND_COLOR, BORDER_RADIUS, BORDER_WIDTH, COLOR, MARGIN, SIZE, BORDER_COLOR;
-
-const Checkbox =()=> {
+const Checkbox =(props)=> {
     const [state,setState]= useState({
-            backgroundColor: '#FFF',
-            borderRadius: 2,
-            borderWidth: 1,
-            checked: true,
-            color: '#000',
-            margin: 5,
-            name: '',
-            onChange: null,
-            size: 20,
-			borderColor: '#000',
-            iconType:'check'
+            backgroundColor  :  props.hasOwnProperty('backgroundColor')?props.backgroundColor:'#FFF',
+            borderRadius     :  props.hasOwnProperty('borderRadius')?props.borderRadius:2,
+            borderWidth      :  props.hasOwnProperty('borderWidth')?props.borderWidth:1,
+            checked          :  props.hasOwnProperty('checked')?props.checked:true,
+            color            :  props.hasOwnProperty('color')?props.color:'#000',
+            margin           :  props.hasOwnProperty('margin')?props.margin:5,
+            name             :  props.hasOwnProperty('name')?props.name:'',
+            onChange         :  props.hasOwnProperty('onChange')?props.onChange:null,
+            size             :  props.hasOwnProperty('size')?props.size:20,
+			borderColor      :  props.hasOwnProperty('borderColor')?props.borderColor:'#000',
+            iconType         :  props.hasOwnProperty('iconType')?props.iconType:'check'
         });
         const toggleCheck =()=> {
             var checked = !state.checked;
             setState({ ...state,checked: checked });
         }
-        BACKGROUND_COLOR = state.backgroundColor;
-        BORDER_RADIUS = state.borderRadius;
-        BORDER_WIDTH = state.borderWidth;
-        COLOR = state.color;
-        MARGIN = state.margin;
-        SIZE = state.size;
-		BORDER_COLOR = state.borderColor;
-        ICON_TYPE = state.iconType;
+        const [BACKGROUND_COLOR,BORDER_RADIUS,BORDER_WIDTH,COLOR,MARGIN,SIZE,BORDER_COLOR,ICON_TYPE]=[state.backgroundColor,state.borderRadius,state.borderWidth,state.color,state.margin,state.size,state.borderColor,state.iconType] 
+
         return (
             <TouchableHighlight underlayColor='transparent'
                 onPress={() => { toggleCheck() }}
