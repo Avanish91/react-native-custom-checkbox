@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { TouchableHighlight, View } from 'react-native';
-
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 var BACKGROUND_COLOR, BORDER_RADIUS, BORDER_WIDTH, COLOR, MARGIN, SIZE, BORDER_COLOR;
 
@@ -16,7 +15,8 @@ const Checkbox =()=> {
             name: '',
             onChange: null,
             size: 20,
-			borderColor: '#000'
+			borderColor: '#000',
+            iconType:'check'
         });
         const toggleCheck =()=> {
             var checked = !state.checked;
@@ -29,6 +29,7 @@ const Checkbox =()=> {
         MARGIN = state.margin;
         SIZE = state.size;
 		BORDER_COLOR = state.borderColor;
+        ICON_TYPE = state.iconType;
         return (
             <TouchableHighlight underlayColor='transparent'
                 onPress={() => { toggleCheck() }}
@@ -38,7 +39,7 @@ const Checkbox =()=> {
                 >
                 <View style={{flex: 1, alignItems: 'center'}}>
                     { state.checked &&
-                    <Icon name='check' size={SIZE - 5 } color={COLOR}/> }
+                    <Icon name={ICON_TYPE} size={SIZE - 5 } color={COLOR}/> }
                 </View>
             </TouchableHighlight>
         );
