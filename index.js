@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 
 var BACKGROUND_COLOR, BORDER_RADIUS, BORDER_WIDTH, COLOR, MARGIN, SIZE, BORDER_COLOR;
 
-const Checkbox =(props)=> {
+const Checkbox =()=> {
     const [state,setState]= useState({
             backgroundColor: '#FFF',
             borderRadius: 2,
