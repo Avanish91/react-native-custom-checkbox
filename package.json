@@ -1,0 +1,17 @@
+{
+  "name": "react-native-custom-checkbox",
+  "version": "1.0.1",
+  "description": "React Native Customizable Checkbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "checkbox"
+  ],
+  "author": "Avanish Tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "react-native-vector-icons": "^10.1.0"
+  }
+}
