@@ -1,13 +1,28 @@
 {
-  "name": "react-native-custom-checkbox",
-  "version": "1.0.1",
+  "name": "custom-react-native-checkbox",
+  "version": "1.0.3",
   "description": "React Native Customizable Checkbox",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "checkbox"
+    "react-native",
+    "checkbox",
+    "react",
+    "mobile",
+    "ios",
+    "android",
+    "custom-react-native-checkbox",
+    "react-native-checkbox",
+    "react-native-check-box",
+    "react-native-customizable-check-box",
+    "react-native-customize-check-box",
+    "react native check box",
+    "react native checkbox",
+    "react native custom check box",
+    "react-native-community/checkbox",
+    "react-native-signup-checkbox"
   ],
   "author": "Avanish Tiwari",
   "license": "ISC",
