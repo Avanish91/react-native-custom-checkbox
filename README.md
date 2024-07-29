@@ -19,7 +19,18 @@ Import the component:
 ```jsx
 <Checkbox
     checked={true}
-    style={{backgroundColor: '#f2f2f2', color:'#900', borderRadius: 5}}
+    backgroundColor  = '#FFF'
+    borderRadius     = 2
+    borderWidth      = 1
+    checked          = true
+    color            = '#000'
+    margin           = 5
+    name             = 'checkbox1'
+    size             = 20
+    borderColor      = '#000'
+    iconType         = 'check'
+    iconSize         = 15
+    iconColor        = '#000'
     onChange={(name, checked) => _myFunction(name, checked)}/>
 ```
 
@@ -71,19 +82,36 @@ borderWidth and margin.
 ```jsx
 <Checkbox
     checked={true}
-    style={{backgroundColor: '#f2f2f2', color:'#900', borderRadius: 5,
-            borderWidth: 2, margin: 10}}
+    backgroundColor  = '#FFF'
+    borderRadius     = 2
+    borderWidth      = 1
+    checked          = true
+    color            = '#000'
+    margin           = 5
+    name             = 'checkbox1'
+    size             = 20
+    borderColor      = '#000'
+    iconType         = 'check'
+    iconSize         = 15
+    iconColor        = '#000'
     onChange={(name, checked) => _myFunction(name, checked)}/>
 ```
 
 Defaults:
 ```javascript
     {
-        backgroundColor: '#FFF',
-        borderRadius: 0,
-        borderWidth: 2,
-        color: '#000',
-        margin: 2,
+        backgroundColor  = '#FFF'
+        borderRadius     = 2
+        borderWidth      = 1
+        checked          = true
+        color            = '#000'
+        margin           = 5
+        name             = 'checkbox1'
+        size             = 20
+        borderColor      = '#000'
+        iconType         = 'check'
+        iconSize         = 15
+        iconColor        = '#000'
     }
 ```
 
